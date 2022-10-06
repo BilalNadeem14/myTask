@@ -2,8 +2,13 @@ import { vh } from "../units";
 
 export default theme = {
     colors: {
-        primaryColor: '#5255ff',//'#AD4FC7',
+        primaryColor: '#442445', //'#025145',//'#5255ff',//'#AD4FC7',
+        orange: '#F28169',
+        
+        
+        
         gray: '#9C9C9C',
+        gray2: '#F5F6FA',
 
         purple2: "#781393",
         white: "#FFF",
@@ -15,7 +20,7 @@ export default theme = {
         placeholderGray: "#ABABAB",
         darkGray: "#333",
         gray1: "#666666",
-        gray2: "#B1B1B1",
+        // gray2: "#B1B1B1",
         gray3: "#7C757E",
         gray4: "#DCDBDB",
         gray5: "#DCDCDC",

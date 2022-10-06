@@ -1,0 +1,33 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/CircularStd-Bold.ttf",
+      "sha1": "5835fba2ecaa73eccaa97501aaabb5299bc2ceea"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-Book.ttf",
+      "sha1": "8627a1f9581109edb203e2a4f71f872aeb6a8468"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-Medium.ttf",
+      "sha1": "41c6ce9d98143129b26c2660e4a7fe8695b64df3"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Bold.ttf",
+      "sha1": "b9b65c039a1f10a5cb5e0726c6e7e18e98a8e517"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Regular.ttf",
+      "sha1": "01d319c533f62ea29f03b5df8adfd4d93d2d2a38"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "20b39c8b480c946b084d6aa09f12bf10b2ec5aa6"
+    },
+    {
+      "path": "src/assets/fonts/index.js",
+      "sha1": "4755bc0b15a35a8a474d4db863874292e91a8cbe"
+    }
+  ]
+}

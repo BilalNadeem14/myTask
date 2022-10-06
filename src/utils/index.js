@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Toast from 'react-native-toast';
+// import Toast from 'react-native-toast';
 
 export const toast = (msg) => {
   if (typeof msg === 'string') {

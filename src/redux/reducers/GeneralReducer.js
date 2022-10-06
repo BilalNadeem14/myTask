@@ -21,17 +21,17 @@ const GeneralReducer = (state = INITIAL_STATE, action) => {
                 loading: false
             }
         }
-        case types.GET_POSTS: {
+        case types.GET_FOOD_LIST: {
             return {
                 ...state,
-                posts_data: action.payload,
+                food_data: action.payload,
                 loading: false
             }
         }
-        case types.ADD_POST: {
+        case types.ADD_FOOD: {
             return {
                 ...state,
-                posts_data: [...state.posts_data, action.payload],
+                food_data: [...state.posts_data, action.payload],
                 loading: false
             }
         }

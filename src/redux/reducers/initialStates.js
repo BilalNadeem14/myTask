@@ -1,18 +1,11 @@
 const authReducer = {
   loggedIn: false,
-  user: {
-    email: 'asad@gmail.com',
-    password: '12345678'
-  },
-  token: '', users: [
-    {
-      email: 'asad@gmail.com',
-      password: '12345678'
-    }
-  ]
+  user: null,
+  token: null,
+  userId: null,
 } //user is the currentUser
 const mainReducer = {
-  posts_data: [],
+  food_data: [],
   loading: false,
 };
 

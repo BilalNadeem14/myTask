@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "key": "profile_pic",
+      "type": "image",
+      "label": "Upload your profile picture",
+      "required": false
+    },
+    {
+      "id": 2,
+      "key": "name",
+      "type": "text",
+      "label": "Food Name",
+      "required": true,
+      "placeholder":"Enter name of Food"
+    },
+    {
+      "id": 3,
+      "key": "name",
+      "type": "text",
+      "label": "Calorie value",
+      "required": true,
+      "placeholder":"Enter Number Of Calories"
+    },
+    {
+      "id": 4,
+      "key": "timeStamp",
+      "type": "date",
+      "label": "Time of Entry",
+      "required": false,
+      "placeholder":"Select your time of meal"
+    }
+  ]

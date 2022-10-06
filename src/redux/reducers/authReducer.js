@@ -10,48 +10,30 @@ export default (state = INITIAL_STATE, action) => {
         case REHYDRATE: {
             return state
         }
-
         case types.SIGN_UP:
-            console.log('action.payload: ', action.payload);
-            let newUser = true
-            state.users.map((val) => {
-                if (action.payload.email == val.email) {
-                    newUser = false
-                }
-                else {
-                    newUser = true
-                }
-            })
-            if (newUser) {
-                toast('new user created!')
-                return { ...state, users: [...state.users, { ...action.payload }], image: {} }
+            return {
+                ...state,
+                token: action.payload.token,
+                user : action.payload.user,
             }
-            else {
-                return { ...state }
-            }
-
         case types.LOGIN:
-            let userExist = false
-            let userIndex = 0
-            if (action.payload.email != '') {
-                state.users.map((val, index) => {
-                    if (action.payload.email == val.email && action.payload.password == val.password) {
-                        userExist = true
-                        userIndex = index
-                    }
-                })
+            let data = {
+                ...state,
+                token: action.payload.token,
+                user : action.payload.user,
             }
-            if (userExist) {
-                toast('successfully logged In');
-                return { ...state, user: { ...state.users[userIndex] }, loggedIn: true }
+            if(action.payload?.user.role == 'USER'){
+                data.userId = action.payload.user._id
             }
-            else {
-                toast('login unsuccessful');
-                return { ...state }
-            }
-
+            return data
+        
+        case types.SAVE_USER_ID:
+            return {...state, userId: action.payload}
+        case types.REMOVE_USER_ID:
+            return {...state, userId: null}
         case types.LOGOUT:
-            return state
+            console.log('LOGOUT REDUCER');
+            return initialState.authReducer
 
         default:
             return state
